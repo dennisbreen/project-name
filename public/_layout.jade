@@ -1,0 +1,13 @@
+- if ( environment == "development" ) server = ''
+doctype
+html
+  head
+    title= title
+    link(rel="stylesheet" href=server+"/css/main.css")
+    script(src=server+"/vendor/jquery/dist/jquery.min.js")
+    script(src=server+"/vendor/knockout/Content/Scripts/knockout-3.2.0.js")
+    script(src=server+"/vendor/knockout.mapping/knockout.mapping.js")
+    script(src=server+"/vendor/bootstrap/dist/js/bootstrap.min.js")
+    script(src=server+"/js/main.js")
+  body
+    != yield
